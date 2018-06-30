@@ -3581,11 +3581,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\CoreEF\\CoreEF\\CoreEF.csproj",
+      "projectUniqueName": "D:\\GitHub\\.NETCoreEFsql\\CoreEF\\CoreEF.csproj",
       "projectName": "CoreEF",
-      "projectPath": "C:\\Users\\User\\source\\repos\\CoreEF\\CoreEF\\CoreEF.csproj",
+      "projectPath": "D:\\GitHub\\.NETCoreEFsql\\CoreEF\\CoreEF.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\CoreEF\\CoreEF\\obj\\",
+      "outputPath": "D:\\GitHub\\.NETCoreEFsql\\CoreEF\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

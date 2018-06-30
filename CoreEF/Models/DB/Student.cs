@@ -19,5 +19,8 @@ namespace CoreEF.Models
         //[ForeignKey("ClassID")]
         public Class Class { get; set; }
 
+        public Class Class2 { get; set; }
+
+
     }
 }

@@ -9,3 +9,14 @@ C:\Users\User\source\repos\CoreEF\CoreEF\obj\Debug\netcoreapp2.0\CoreEF.Assembly
 C:\Users\User\source\repos\CoreEF\CoreEF\bin\Debug\netcoreapp2.0\CoreEF.pdb
 C:\Users\User\source\repos\CoreEF\CoreEF\obj\Debug\netcoreapp2.0\CoreEF.dll
 C:\Users\User\source\repos\CoreEF\CoreEF\obj\Debug\netcoreapp2.0\CoreEF.pdb
+D:\GitHub\.NETCoreEFsql\CoreEF\bin\Debug\netcoreapp2.0\CoreEF.deps.json
+D:\GitHub\.NETCoreEFsql\CoreEF\bin\Debug\netcoreapp2.0\CoreEF.runtimeconfig.json
+D:\GitHub\.NETCoreEFsql\CoreEF\bin\Debug\netcoreapp2.0\CoreEF.runtimeconfig.dev.json
+D:\GitHub\.NETCoreEFsql\CoreEF\bin\Debug\netcoreapp2.0\CoreEF.dll
+D:\GitHub\.NETCoreEFsql\CoreEF\bin\Debug\netcoreapp2.0\CoreEF.pdb
+D:\GitHub\.NETCoreEFsql\CoreEF\obj\Debug\netcoreapp2.0\CoreEF.csprojAssemblyReference.cache
+D:\GitHub\.NETCoreEFsql\CoreEF\obj\Debug\netcoreapp2.0\CoreEF.csproj.CoreCompileInputs.cache
+D:\GitHub\.NETCoreEFsql\CoreEF\obj\Debug\netcoreapp2.0\CoreEF.AssemblyInfoInputs.cache
+D:\GitHub\.NETCoreEFsql\CoreEF\obj\Debug\netcoreapp2.0\CoreEF.AssemblyInfo.cs
+D:\GitHub\.NETCoreEFsql\CoreEF\obj\Debug\netcoreapp2.0\CoreEF.dll
+D:\GitHub\.NETCoreEFsql\CoreEF\obj\Debug\netcoreapp2.0\CoreEF.pdb

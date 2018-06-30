@@ -30,18 +30,19 @@ namespace CoreEF.EF
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-          
-           // modelBuilder.Entity<Class>()
-           //.HasKey(c => c.Id);
 
-           // modelBuilder.Entity<Student>()
-           //.Property<int>("ClassID");
+            // modelBuilder.Entity<Class>()
+            //.HasKey(c => c.Id);
 
-           // modelBuilder.Entity<Student>()
-           //     .HasOne(p => p.Class)
-           //     .WithMany(b => b.Students)
-           //     .HasForeignKey(p => p.ClassID);
-            
+            // modelBuilder.Entity<Student>()
+            //.Property<int>("ClassID");
+
+            //class2 does not build FK ,so we need build aelation
+            modelBuilder.Entity<Student>()
+                .HasOne(p => p.Class2)
+                .WithMany(b => b.Students)
+                .HasForeignKey(p => p.ClassID);
+
         }
     }
 }
