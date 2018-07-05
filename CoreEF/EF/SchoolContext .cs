@@ -37,11 +37,11 @@ namespace CoreEF.EF
             // modelBuilder.Entity<Student>()
             //.Property<int>("ClassID");
 
-            //class2 does not build FK ,so we need build aelation
-            modelBuilder.Entity<Student>()
-                .HasOne(p => p.Class2)
-                .WithMany(b => b.Students)
-                .HasForeignKey(p => p.ClassID);
+            //class2 does not build FK ,so we need build relation
+            //modelBuilder.Entity<Student>()
+            //    .HasOne(p => p.Class2)
+            //    .WithMany(b => b.Students)
+            //    .HasForeignKey(p => p.Class2ID);
 
         }
     }

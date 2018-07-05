@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CoreEF.Models.DB
+namespace CoreEF.Models
 {
-    class Class2
+    public class Class2
     {
         public int Id { get; set; }
 

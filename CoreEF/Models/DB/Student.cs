@@ -16,10 +16,14 @@ namespace CoreEF.Models
 
         public int ClassID { get; set; }
 
+        public int Class2ID { get; set; }
+
+
+
         //[ForeignKey("ClassID")]
         public Class Class { get; set; }
 
-        public Class Class2 { get; set; }
+        public Class2 Class2 { get; set; }
 
 
     }
