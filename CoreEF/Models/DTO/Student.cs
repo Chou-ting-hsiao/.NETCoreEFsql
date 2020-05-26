@@ -12,18 +12,18 @@ namespace CoreEF.Models
 
         public string Name { get; set; }
 
-        public string Age { get; set; }
+        public int Age { get; set; }
 
-        public int ClassID { get; set; }
+        public int CourseID { get; set; }
 
-        public int Class2ID { get; set; }
+        public int Course2ID { get; set; }
 
 
 
         //[ForeignKey("ClassID")]
-        public Class Class { get; set; }
+        public Course Course { get; set; }
 
-        public Class2 Class2 { get; set; }
+        public Course2 Course2 { get; set; }
 
 
     }

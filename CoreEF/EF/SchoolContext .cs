@@ -13,7 +13,8 @@ namespace CoreEF.EF
         public static IConfiguration Configuration { get; set; }
 
         public DbSet<Student> Student { get; set; }
-        public DbSet<Class> Class { get; set; }
+        public DbSet<Course> Course { get; set; }
+        public DbSet<Course2> Course2 { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -31,17 +32,17 @@ namespace CoreEF.EF
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
-            // modelBuilder.Entity<Class>()
-            //.HasKey(c => c.Id);
+            modelBuilder.Entity<Course>()
+           .HasKey(c => c.Id);
 
-            // modelBuilder.Entity<Student>()
-            //.Property<int>("ClassID");
+            modelBuilder.Entity<Student>()
+           .Property<int>("CourseID");
 
-            //class2 does not build FK ,so we need build relation
-            //modelBuilder.Entity<Student>()
-            //    .HasOne(p => p.Class2)
-            //    .WithMany(b => b.Students)
-            //    .HasForeignKey(p => p.Class2ID);
+            //Course2ID does not build FK ,so we need build relation
+            modelBuilder.Entity<Student>()
+                .HasOne(p => p.Course2)
+                .WithMany(b => b.Students)
+                .HasForeignKey(p => p.Course2ID);
 
         }
     }

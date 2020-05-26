@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace CoreEF.Models
 {
-    public class Class
+    public class Course2
     {
         public int Id { get; set; }
 

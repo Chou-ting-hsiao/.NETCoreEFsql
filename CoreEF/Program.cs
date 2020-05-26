@@ -15,8 +15,8 @@ namespace CoreEF
           
             var db = new SchoolContext();
             //get the table with relation table
-            var a=db.Student.Include(x=>x.Class).ToList();
-            var b=db.Student.Include(x=>x.Class2).ToList();
+            var a=db.Student.Include(x=>x.Course).ToList();
+            var b=db.Student.Include(x=>x.Course2).ToList();
 
 
             Console.Read();
