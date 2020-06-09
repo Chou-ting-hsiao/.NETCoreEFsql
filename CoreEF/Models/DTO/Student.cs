@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -14,15 +15,16 @@ namespace CoreEF.Models
 
         public int Age { get; set; }
 
-        public int CourseID { get; set; }
+        public int CID { get; set; }
 
-        public int Course2ID { get; set; }
+        public int C2ID { get; set; }
 
 
 
-        //[ForeignKey("ClassID")]
+        [JsonIgnore]
         public Course Course { get; set; }
 
+        [JsonIgnore]
         public Course2 Course2 { get; set; }
 
 

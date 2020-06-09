@@ -31,19 +31,26 @@ namespace CoreEF.EF
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Course>(entity => {
+                entity.HasKey(x => x.Id);
+            });
 
-            modelBuilder.Entity<Course>()
-           .HasKey(c => c.Id);
+            modelBuilder.Entity<Course2>(entity => {
+                entity.HasKey(x => x.Id);
+            });
 
-            modelBuilder.Entity<Student>()
-           .Property<int>("CourseID");
+            modelBuilder.Entity<Student>(entity => {
+                entity.HasKey(x => x.Id);
 
-            //Course2ID does not build FK ,so we need build relation
-            modelBuilder.Entity<Student>()
-                .HasOne(p => p.Course2)
-                .WithMany(b => b.Students)
-                .HasForeignKey(p => p.Course2ID);
+                entity.HasOne(p => p.Course)
+                      .WithMany(b => b.Students)
+                      .HasForeignKey(p => p.CID);
 
+                entity.HasOne(p => p.Course2)
+                      .WithMany(b => b.Students)
+                      .HasForeignKey(p => p.C2ID);
+            });
+            
         }
     }
 }
